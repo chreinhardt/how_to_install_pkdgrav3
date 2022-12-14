@@ -17,16 +17,23 @@ Go to your code directory (e.g., ``` cd ~/code ```) and make a new directory for
 cd pkdgrav
 git clone https://bitbucket.org/dpotter/pkdgrav3.git
 ```
-from github. Now make another directory 
+from github. Change to the branch *develop*
+```
+cd pkdgrav3
+git checkout develop
+cd ..
+```
+to use SPH. Now make another directory 
 ```
 mkdir build
 ```
-and generate the ``` Makefile ```  with
+and compile the code with
 ```
 cd build
 cmake ../pkdgrav3
+make -j nthreads
 ```
-using cmake.
+where *nthreads* is the number of threads by make. 
 
 *Note:* If you have any problem with those steps check the README files in the folder ``` pkdgrav3 ```.
 
