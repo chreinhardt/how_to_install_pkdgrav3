@@ -10,8 +10,6 @@ This repository provides instructions on which software is used for collision si
 
 Note that there is a README.ubuntu file in the pkdgrav3 repository which provides instructions for installing all required packages on Ubuntu 22.04.
 
-### pkdgrav
-
 Go to your code directory (e.g., ``` cd ~/code ```) and make a new directory for pkdgrav with ``` mkdir pkdgrav ```. Then clone the pkdgrav3 repository
 ```
 cd pkdgrav
@@ -33,7 +31,9 @@ cd build
 cmake ../pkdgrav3
 make -j nthreads
 ```
-where *nthreads* is the number of threads by make. 
+where *nthreads* is the number of threads by make. This produces the binary file ``` pkdgrav ``` in the build folder.
 
 *Note:* If you have any problem with those steps check the README files in the folder ``` pkdgrav3 ```.
 
+## Running
+Make a folder which contains the pkdgrav3 binary, a tipsy binary file with initial conditions and a parameter file. 
