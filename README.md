@@ -12,11 +12,21 @@ Note that there is a README.ubuntu file in the pkdgrav3 repository which provide
 
 ### pkdgrav
 
-Go to your code directory (e.g., ``` cd ~/code ```) and make a new directory for pkdgrav with ``` mkdir pkdgrav ```. Then change into this directory (``` cd pkdgrav ```) and clone the pkdgrav3 repository
+Go to your code directory (e.g., ``` cd ~/code ```) and make a new directory for pkdgrav with ``` mkdir pkdgrav ```. Then clone the pkdgrav3 repository
 ```
+cd pkdgrav
 git clone https://bitbucket.org/dpotter/pkdgrav3.git
 ```
-from github. Now make another directory (e.g., ``` mkdir build ```) and run ``` cmake ../pkdgrav3 ```.
+from github. Now make another directory 
+```
+mkdir build
+```
+and generate the ``` Makefile ```  with
+```
+cd build
+cmake ../pkdgrav3
+```
+using cmake.
 
 *Note:* If you have any problem with those steps check the README files in the folder ``` pkdgrav3 ```.
 
