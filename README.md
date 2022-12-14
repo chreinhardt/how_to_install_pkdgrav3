@@ -10,16 +10,13 @@ This repository provides instructions on which software is used for collision si
 
 Note that there is a README.ubuntu file in the pkdgrav3 repository which provides instructions for installing all required packages on Ubuntu 22.04.
 
-### Gasoline
-Go to the gasoline-ics directory (e.g., ```cd ./code/gasoline-ics```) and type
-```
-make null
-```
-to compile the code to run on a single CPU or
-```
-make pthread
-```
-to obtain a version that runs on several threads using pthread.
+### pkdgrav
 
-*Note:* Make sure that ```mdl``` and ```GSL``` are installed before compiling the code.
+Go to your code directory (e.g., ``` cd ~/code ```) and make a new directory for pkdgrav with ``` mkdir pkdgrav ```. Then change into this directory (``` cd pkdgrav ```) and clone the pkdgrav3 repository
+```
+git clone https://bitbucket.org/dpotter/pkdgrav3.git
+```
+from github. Now make another directory (e.g., ``` mkdir build ```) and run ``` cmake ../pkdgrav3 ```.
+
+*Note:* If you have any problem with those steps check the README files in the folder ``` pkdgrav3 ```.
 
